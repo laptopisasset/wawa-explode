@@ -9,7 +9,7 @@ import { useExplode } from "../hooks/useExplode";
 import { useControls } from "leva";
 
 export function WesternBird({ ...props }) {
-  const { nodes, materials } = useGLTF("/models/Western bluebird.glb");
+  const { nodes, materials } = useGLTF("models/Western bluebird.glb");
   const group = useRef();
 
   const { bluebirddistance } = useControls({
@@ -365,4 +365,4 @@ export function WesternBird({ ...props }) {
   );
 }
 
-useGLTF.preload("/models/Western bluebird.glb");
+useGLTF.preload("models/Western bluebird.glb");
